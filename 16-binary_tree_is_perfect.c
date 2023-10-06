@@ -23,9 +23,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 
 	h = binary_tree_height(tree);
 	n = binary_tree_size(tree);
-	p = (size_t)_pow_rec(2, h + 1);
+	pw = (size_t)_pow_rec(2, h + 1);
 
-	return (p - 1 == n);
+	return (pw - 1 == n);
 }
 /**
  * _pow_rec - function to return a raised to the power of b
